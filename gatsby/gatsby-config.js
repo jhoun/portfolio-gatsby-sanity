@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    author: `@gatsbyjs`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -10,10 +10,9 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
+        path: `${__dirname}/src/images`
+      }
+    }`gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     {
@@ -23,7 +22,16 @@ module.exports = {
         dataset: 'production',
         overlayDrafts: true,
         watchMode: true,
-        token: 'sksJtvyvXfilWdI6mUgSVQX8HYJmGTcLfPmYKw1KshrdZ0aRa3VvwzEP5oOOgoCTqzpLI8mrLFN2iKAZgtZnhXjmy7D2B8kE6NOwqidGDfHNe7OR74sLnrt8ku90Y4XgYTbIbY6QdRIGSgGgiTzMeOjbqgYW5DQjPGspxDpfLXEkzt2evqFe'
+        token:
+          'sksJtvyvXfilWdI6mUgSVQX8HYJmGTcLfPmYKw1KshrdZ0aRa3VvwzEP5oOOgoCTqzpLI8mrLFN2iKAZgtZnhXjmy7D2B8kE6NOwqidGDfHNe7OR74sLnrt8ku90Y4XgYTbIbY6QdRIGSgGgiTzMeOjbqgYW5DQjPGspxDpfLXEkzt2evqFe'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /icons/
+        }
       }
     },
     {
@@ -35,11 +43,11 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
+        icon: `src/images/gatsby-icon.png` // This path is relative to the root of the site.
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
-  ],
-}
+  ]
+};

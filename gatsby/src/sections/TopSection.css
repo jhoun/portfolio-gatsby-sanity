@@ -1,42 +1,78 @@
 .container {
   width: 100%;
-  height: 70vh;
+  height: 75vh;
+  position: relative;
 }
 
-.ml6 {
+.text-container {
   display: flex;
   justify-content: center;
-  position: relative;
-  font-weight: 900;
   font-size: 4em;
   color: white;
   padding-top: 5rem;
 }
 
-.ml6 .text-wrapper {
-  position: relative;
+.text-container .text-wrapper {
   display: inline-block;
-  padding-top: 0.2em;
+
   padding-right: 0.05em;
   padding-bottom: 0.1em;
   overflow: hidden;
 }
 
-.ml6 .letter {
+.text-container .text-wrapper__letter {
   display: inline-block;
   line-height: 1em;
 }
 
-.name {
+.text-wrapper__name {
   color: black;
   padding-left: 1rem;
 }
 
-.letters {
+.text-wrapper__letters {
   display: flex;
   justify-content: center;
 }
 
-.letter {
+.text-wrapper__letter {
   padding-bottom: 3rem;
+}
+
+@keyframes downArrow {
+  0% {
+    transform: translate(0, 0);
+  }
+  30% {
+    transform: translate(0, 15px);
+  }
+}
+
+.scroll-down {
+  bottom: 0;
+  left: 50%;
+  cursor: pointer;
+  margin-bottom: 54px;
+  position: absolute;
+  width: 45px;
+  animation: downArrow 0.8s ease-out infinite;
+}
+
+.scroll-down__arrow {
+  position: relative;
+  left: -50%;
+}
+
+@media only screen and (min-width: 770px) {
+  .container {
+    height: 100vh;
+  }
+
+  .text-container {
+    padding-top: 12rem;
+  }
+
+  .text-wrapper__letters {
+    display: initial;
+  }
 }

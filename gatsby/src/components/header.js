@@ -6,9 +6,9 @@ import './header.css';
 const Header = ({ siteTitle }) => (
   <header className="header">
     <div className="nav">
-      <Link to="/" className="nav__item">
+      <a href="#about-me" className="nav__item">
         ABOUT ME
-      </Link>
+      </a>
       <Link to="/" className="nav__item">
         EXPERIENCE
       </Link>
