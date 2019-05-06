@@ -22,9 +22,9 @@ const TopSection = () => {
       translateZ={0}
       duration={2000}
       color={(el, i, t) => {
-        const r = 243 + i * 12;
-        const g = 146 + i * 12;
-        const b = 0;
+        const r = 241 + i * 12;
+        const g = 113 + i * 12;
+        const b = 5;
         const color = `rgb(${r}, ${g}, ${b})`;
         return color;
       }}
@@ -32,12 +32,14 @@ const TopSection = () => {
         return 100 * i;
       }}
     >
-      <h1 className="ml6">
-        <span className="text-wrapper">
-          <span className="letters">{splitLetter('ALOHA')}</span>
-          <span className="name">I'M JAY</span>
-        </span>
-      </h1>
+      <div className="container">
+        <h1 className="ml6">
+          <span className="text-wrapper">
+            <span className="letters">{splitLetter('ALOHA')}</span>
+            <span className="name">I'M JAY</span>
+          </span>
+        </h1>
+      </div>
     </Anime>
   );
 };

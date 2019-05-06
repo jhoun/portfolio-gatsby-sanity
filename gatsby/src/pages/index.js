@@ -1,25 +1,25 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
 // import Image from 'gatsby-image'
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Topsection from "../sections/TopSection";
-
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import Topsection from '../sections/TopSection';
+import AboutMe from '../sections/AboutMe';
 
 export const query = graphql`
   {
-    allSanityProject{
-      edges{
-        node{
+    allSanityProject {
+      edges {
+        node {
           title
           description
-          slug{
+          slug {
             current
           }
-          image{
-            asset{
-              fluid{
+          image {
+            asset {
+              fluid {
                 ...GatsbySanityImageFluid
               }
             }
@@ -31,10 +31,10 @@ export const query = graphql`
 `;
 
 const IndexPage = ({ data }) => (
-
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
-      <Topsection />
+    <Topsection />
+    <AboutMe />
     {/* <ul style={{ listStyle: 'none', display: 'flex', alighItems: 'space-between', padding: 0}}>
       {data.allSanityProject.edges.map(({ node: project}) => {
         return (
@@ -53,6 +53,6 @@ const IndexPage = ({ data }) => (
       })}
     </ul> */}
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;
