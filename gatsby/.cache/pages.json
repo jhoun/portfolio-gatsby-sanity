@@ -1,0 +1,42 @@
+[
+    {
+        "componentChunkName": "component---src-pages-index-js",
+        "jsonName": "index",
+        "path": "/"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "jsonName": "404-html-516",
+        "path": "/404.html"
+    },
+    {
+        "componentChunkName": "component---src-pages-404-js",
+        "jsonName": "404-22d",
+        "path": "/404/"
+    },
+    {
+        "componentChunkName": "component---cache-dev-404-page-js",
+        "jsonName": "dev-404-page-5f9",
+        "path": "/dev-404-page/"
+    },
+    {
+        "componentChunkName": "component---src-templates-project-js",
+        "jsonName": "example-1-f6e",
+        "path": "/example_1"
+    },
+    {
+        "componentChunkName": "component---src-templates-project-js",
+        "jsonName": "example-2-a29",
+        "path": "/example_2"
+    },
+    {
+        "componentChunkName": "component---src-pages-page-2-js",
+        "jsonName": "page-2-fbc",
+        "path": "/page-2/"
+    },
+    {
+        "componentChunkName": "component---src-templates-project-js",
+        "jsonName": "react-kanban-ec5",
+        "path": "/react-kanban"
+    }
+]
