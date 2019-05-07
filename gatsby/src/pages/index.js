@@ -7,6 +7,8 @@ import SEO from '../components/seo';
 import Topsection from '../sections/TopSection';
 import AboutMe from '../sections/AboutMe';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 export const query = graphql`
   {
     allSanityProject {
