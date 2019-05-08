@@ -4,6 +4,15 @@
  *
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
+import { library } from '@fortawesome/fontawesome-svg-core';
+import {
+  faArrowLeft,
+  faCaretSquareRight,
+  faExternalLinkAlt,
+  faStar,
+  faTimesCircle,
+  faChalkboard
+} from '@fortawesome/free-solid-svg-icons';
 
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -11,6 +20,15 @@ import { StaticQuery, graphql } from 'gatsby';
 
 import Header from './header';
 import './layout.css';
+
+library.add(
+  faArrowLeft,
+  faCaretSquareRight,
+  faExternalLinkAlt,
+  faStar,
+  faTimesCircle,
+  faChalkboard
+);
 
 const Layout = ({ children }) => (
   <StaticQuery
