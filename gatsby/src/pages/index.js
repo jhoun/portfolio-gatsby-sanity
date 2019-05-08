@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Topsection from '../sections/TopSection';
 import AboutMe from '../sections/AboutMe';
+import Experience from '../sections/Experience';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -47,16 +48,36 @@ export const query = graphql`
         }
       }
     }
+    allSanityExperience {
+      edges {
+        node {
+          title
+          description
+          slug {
+            current
+          }
+          image {
+            asset {
+              fluid {
+                ...GatsbySanityImageFluid
+              }
+            }
+          }
+        }
+      }
+    }
   }
 `;
 
 const IndexPage = ({ data }) => {
   const { edges: aboutData } = data.allSanityAbout;
+  const { edges: experienceData } = data.allSanityExperience;
   return (
     <Layout>
       <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
       <Topsection />
       <AboutMe aboutData={aboutData} />
+      <Experience experienceData={experienceData} />
       {/* <ul style={{ listStyle: 'none', display: 'flex', alighItems: 'space-between', padding: 0 }}>
       {data.allSanityProject.edges.map(({ node: project }) => {
         return (

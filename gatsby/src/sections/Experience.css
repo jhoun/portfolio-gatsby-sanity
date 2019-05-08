@@ -1,0 +1,25 @@
+.experience-container {
+  height: 100%;
+}
+
+.experience__main-title {
+  padding: 2rem 0 3rem 0;
+  text-align: center;
+}
+
+.experience__title {
+  color: #f17105;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.experience__description {
+  padding: 0 2.7rem 2rem;
+  text-align: justify;
+}
+
+.experience__image {
+  max-width: 80%;
+  margin: auto;
+  padding: 0 0 3rem;
+}

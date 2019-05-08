@@ -1,6 +1,6 @@
 export default {
-  name: "project",
-  title: "Project",
+  name: "experience",
+  title: "Experience",
   type: "document",
   fields: [
     {
@@ -19,7 +19,7 @@ export default {
     },
     {
       name: "image",
-      title: "Project Screenshot",
+      title: "Experience Screenshot",
       type: "image",
       options: {
         hotspot: true
