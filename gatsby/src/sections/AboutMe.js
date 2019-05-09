@@ -9,10 +9,12 @@ const AboutMe = ({ aboutData }) => {
   return (
     <div id="about-me" className="aboutme-container">
       <h1 className="about-me__title">{about.name.toUpperCase()}</h1>
-      <div className="image-container">
-        <Image fluid={about.image.asset.fluid} />
+      <div className="aboutme__wrapper">
+        <div className="image__container">
+          <Image fluid={about.image.asset.fluid} />
+        </div>
+        <div className="description__container">{about.description}</div>
       </div>
-      <div className="description-container">{about.description}</div>
       <div className="card__container">
         <div className="card__body">
           <div className="card__title">FRONTEND</div>

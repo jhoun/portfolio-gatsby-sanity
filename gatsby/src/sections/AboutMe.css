@@ -10,13 +10,13 @@
   text-align: center;
 }
 
-.image-container {
-  max-width: 80%;
+.image__container {
+  width: 20rem;
   margin: auto;
   padding-top: 3rem;
 }
 
-.description-container {
+.description__container {
   display: flex;
   justify-content: center;
   padding: 2rem 2rem;
@@ -72,4 +72,40 @@
 
 .chalkboard {
   color: #c4941d;
+}
+
+@media only screen and (min-width: 770px) {
+  .aboutme__wrapper {
+    display: flex;
+    padding: 2rem 6rem 3rem;
+    width: 65rem;
+    margin: auto;
+  }
+
+  .image__container {
+    flex: 2;
+    padding: 0 1rem 0 0;
+  }
+
+  .description__container {
+    flex: 2;
+    padding: 0 0 0 1rem;
+  }
+
+  .card__container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .card__body:nth-child(1) {
+    margin-left: 2rem;
+  }
+
+  .card__body:nth-child(2) {
+    margin: 0 2rem;
+  }
+
+  .card__body:nth-child(3) {
+    margin-right: 2rem;
+  }
 }
