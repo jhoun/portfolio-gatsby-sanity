@@ -1,5 +1,5 @@
 .aboutme-container {
-  background: #79c0fc;
+  background: #00a7e1;
   height: 100%;
   color: white;
   padding-bottom: 3rem;
@@ -58,7 +58,7 @@
   justify-content: space-between;
 }
 .star {
-  color: #f17105;
+  color: #c4941d;
 }
 
 .learn__items {
@@ -71,5 +71,5 @@
 }
 
 .chalkboard {
-  color: #f17105;
+  color: #c4941d;
 }

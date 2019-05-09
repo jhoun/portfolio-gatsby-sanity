@@ -1,24 +1,26 @@
-.experience-container {
+.project-container {
   height: 100%;
+  background: #00a7e1;
+  color: white;
 }
 
-.experience__main-title {
+.project__main-title {
   padding: 2rem 0 3rem 0;
   text-align: center;
 }
 
-.experience__title {
+.project__title {
   color: #143642;
   text-align: center;
   padding-bottom: 1rem;
 }
 
-.experience__description {
+.project__description {
   padding: 0 2.7rem 2rem;
   text-align: justify;
 }
 
-.experience__image {
+.project__image {
   max-width: 80%;
   margin: auto;
   padding: 0 0 3rem;

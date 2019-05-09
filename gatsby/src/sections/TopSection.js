@@ -21,15 +21,15 @@ const TopSection = () => {
       <h1 className="text-container">
         <span className="text-wrapper">
           <Anime
-            loop={true}
+            loop={false}
             targets={'.text-container .text-wrapper__letter'}
             translateY={['.9em', 0]}
             translateZ={0}
             duration={2000}
             color={(el, i, t) => {
-              const r = 241 + i * 12;
-              const g = 113 + i * 12;
-              const b = 5;
+              const r = 196 + i * 12;
+              const g = 148 + i * 12;
+              const b = 29;
               const color = `rgb(${r}, ${g}, ${b})`;
               return color;
             }}
