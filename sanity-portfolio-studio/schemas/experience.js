@@ -36,5 +36,14 @@ export default {
       type: "reference",
       to: { type: "author" }
     }
+  ],
+  orderings: [
+    {
+      title: 'Title',
+      name: 'titleDesc',
+      by: [
+        {field: 'title', direction: 'desc'}
+      ]
+    }
   ]
 };

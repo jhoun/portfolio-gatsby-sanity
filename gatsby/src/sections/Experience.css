@@ -1,25 +1,41 @@
-.experience-container {
-  height: 100%;
+.experience__container {
+  height: 90vh;
+  width: 100%;
 }
 
-.experience__main-title {
+.experience__section-title {
+  color: #143642;
   padding: 2rem 0 3rem 0;
   text-align: center;
+}
+
+.experience-list {
+  display: flex;
+  justify-content: center;
+}
+
+.experience__card {
+  flex: 1;
 }
 
 .experience__title {
   color: #143642;
   text-align: center;
   padding-bottom: 1rem;
+  font-size: 1rem;
 }
 
 .experience__description {
   padding: 0 2.7rem 2rem;
-  text-align: justify;
 }
 
 .experience__image {
-  max-width: 80%;
+  max-width: 100%;
   margin: auto;
-  padding: 0 0 3rem;
+  padding: 0 1rem 3rem;
+}
+
+
+@media only screen and (min-width:770px) {
+
 }

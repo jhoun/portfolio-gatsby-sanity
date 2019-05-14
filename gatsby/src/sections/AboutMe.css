@@ -75,20 +75,24 @@
 }
 
 @media only screen and (min-width: 770px) {
-  .aboutme__wrapper {
-    display: flex;
-    padding: 2rem 6rem 3rem;
-    width: 65rem;
+  .aboutme__subcontainer {
+    width: 55rem;
     margin: auto;
   }
 
+  .aboutme__wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+  }
+
   .image__container {
-    flex: 2;
+    flex: 1 1;
     padding: 0 1rem 0 0;
   }
 
   .description__container {
-    flex: 2;
+    flex: 1 1;
     padding: 0 0 0 1rem;
   }
 
