@@ -29,7 +29,6 @@ class Experience extends React.Component {
     const { selectedIndex, selectedColor } = this.state;
     let selectedExperience = experienceData[selectedIndex];
 
-    console.log('experienceData', experienceData);
     return (
       <div className="experience__container">
         <h1 className="experience__section-title">Experience</h1>

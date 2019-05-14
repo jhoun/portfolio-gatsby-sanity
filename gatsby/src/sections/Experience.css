@@ -1,5 +1,5 @@
-.experience__container {
-  height: 90vh;
+.experience__container{
+  height: 100%;
   width: 100%;
 }
 
@@ -37,5 +37,21 @@
 
 
 @media only screen and (min-width:770px) {
+  .experience-list__container {
+    display: flex;
+  }
 
+  .experience__card {
+    flex: 0;
+  }
+
+  .experience-list {
+    flex-direction: column;
+    flex: 1 1 40%;
+  }
+
+  .selected-experience {
+    flex: 1 1 60%;
+    padding-right: 2rem;
+  }
 }
