@@ -28,7 +28,8 @@ export default {
     {
       name: "description",
       title: "Description",
-      type: "text"
+      type: "array",
+      of: [{ type: 'string'}]
     },
     {
       name: "author",

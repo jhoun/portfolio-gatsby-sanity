@@ -71,6 +71,7 @@ export const query = graphql`
 `;
 
 const IndexPage = ({ data }) => {
+  console.log('data', data);
   const { edges: aboutData } = data.allSanityAbout;
   const { edges: experienceData } = data.allSanityExperience;
   const { edges: projectData } = data.allSanityProject;

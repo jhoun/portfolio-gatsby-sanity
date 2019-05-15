@@ -25,3 +25,32 @@
   margin: auto;
   padding: 0 0 3rem;
 }
+
+@media only screen and (min-width:770px) {
+  .project__card {
+    display: flex;
+    padding: 0 5rem;
+  }
+
+  .project__card__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 50%;
+    align-items: flex-end;
+  }
+
+  .project__card__wrapper2 {
+    width: 30rem;
+    padding: 0;
+  }
+
+  .project__image {
+    margin: auto;
+    padding: 0;
+    flex: 1 1 50%;
+  }
+
+  .gatsby-image-wrapper {
+    width: 40rem;
+  }
+}

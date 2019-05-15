@@ -15,43 +15,56 @@
 }
 
 .experience__card {
-  flex: 1;
+  flex: 1 0 30px;
 }
 
 .experience__title {
   color: #143642;
   text-align: center;
   padding-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 13px;
+  font-weight: bold;
+  cursor: pointer;
 }
 
-.experience__description {
+.selected-experience__description {
   padding: 0 2.7rem 2rem;
 }
 
-.experience__image {
-  max-width: 100%;
+.selected-experience__image {
+  width: 100%;
   margin: auto;
   padding: 0 1rem 3rem;
 }
 
 
 @media only screen and (min-width:770px) {
-  .experience-list__container {
-    display: flex;
-  }
 
   .experience__card {
-    flex: 0;
+    flex: 0 0 0;
   }
 
   .experience-list {
-    flex-direction: column;
-    flex: 1 1 40%;
+    padding-bottom: 5rem;
   }
 
   .selected-experience {
-    flex: 1 1 60%;
-    padding-right: 2rem;
+    display: flex;
+    padding: 0 10rem;
   }
+
+  .experience__title {
+    padding-bottom: 0;
+    width: 10rem;
+    font-size: 1rem;
+  }
+
+  .selected-experience__image {
+    flex: 1 1 50%;
+  }
+
+  .selected-experience__description {
+    flex: 1 1 50%;
+  }
+
 }

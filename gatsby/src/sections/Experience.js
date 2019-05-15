@@ -48,9 +48,17 @@ class Experience extends React.Component {
             })}
           </div>
           <div className="selected-experience">
-            <div className="experience__image">
+            <div className="selected-experience__image">
               <Image fluid={selectedExperience.node.image.asset.fluid} />
-              <div className="experience__description">{selectedExperience.node.description}</div>
+            </div>
+            <div className="selected-experience__description">
+              <ul>
+                {selectedExperience.node.description.map((detail, index)=> {
+                  return (
+                    <li key={index} >{detail}</li>
+                  )
+                })}
+              </ul>
             </div>
           </div>
         </div>
