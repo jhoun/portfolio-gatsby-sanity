@@ -234,7 +234,7 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 5vw !important;
+  font-size: 8vw !important;
   line-height: 1.1;
 }
 h2 {
@@ -625,7 +625,7 @@ pre tt:after {
 .section-title {
   font-size: 2rem;
   font-weight: bold;
-  padding: 2rem 0 2rem 0;
+  padding: 10rem 0 2rem 0;
   text-align: center;
 }
 
@@ -637,4 +637,9 @@ pre tt:after {
   .gatsby-image-wrapper {
     flex: 1 1 85rem;
   }
+}
+
+a {
+  color: #c4941d !important;
+  cursor: pointer;
 }

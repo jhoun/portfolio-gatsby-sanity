@@ -17,7 +17,6 @@
 
 .project__description {
   padding: 0 2.7rem 2rem;
-  text-align: justify;
 }
 
 .project__image {
@@ -46,7 +45,15 @@
   }
 
   .project__description {
-    padding: 0;
-    text-align: none;
+    padding: 0 0 2rem 0;
+  }
+
+  .button__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  button {
+    width: 7rem;
   }
 }

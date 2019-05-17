@@ -8,3 +8,7 @@
 .nav__item:hover {
   color: #556c62;
 }
+
+.navbar-expand-lg .navbar-nav {
+  padding-top: 1rem;
+}

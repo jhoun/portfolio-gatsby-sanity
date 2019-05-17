@@ -4,7 +4,7 @@ import './footer.css';
 
 const Footer = () => {
   return (
-    <div className="contact-container">
+    <div name="contact" className="contact-container">
       <div className="section-title">Contact</div>
       <div className="contact__links">
         <div className="contact__githuh">Github</div>

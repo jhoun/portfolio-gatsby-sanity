@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
 import Layout from '../components/layout';
@@ -10,7 +10,7 @@ import Experience from '../sections/Experience';
 import Projects from '../sections/Projects';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './index.css'
+import './index.css';
 
 export const query = graphql`
   {
@@ -19,6 +19,8 @@ export const query = graphql`
         node {
           title
           description
+          githubUrl
+          liveDemoUrl
           slug {
             current
           }
@@ -72,7 +74,6 @@ export const query = graphql`
 `;
 
 const IndexPage = ({ data }) => {
-  console.log('data', data);
   const { edges: aboutData } = data.allSanityAbout;
   const { edges: experienceData } = data.allSanityExperience;
   const { edges: projectData } = data.allSanityProject;

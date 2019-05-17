@@ -7,7 +7,7 @@ import './AboutMe.css';
 const AboutMe = ({ aboutData }) => {
   const { node: about } = aboutData[0];
   return (
-    <div id="about-me" className="aboutme-container">
+    <div name="about-me" className="aboutme-container">
       <div className="section-title">{about.name.toUpperCase()}</div>
       <div className="aboutme__subcontainer">
         <div className="aboutme__wrapper">

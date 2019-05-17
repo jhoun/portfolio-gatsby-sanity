@@ -30,7 +30,7 @@ class Experience extends React.Component {
     let selectedExperience = experienceData[selectedIndex];
 
     return (
-      <div className="experience__container">
+      <div name="experience" className="experience__container">
         <div className="section-title">EXPERIENCE</div>
         <div className="experience-list__container">
           <div className="experience-list">

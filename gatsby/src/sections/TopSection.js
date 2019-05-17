@@ -18,7 +18,7 @@ const splitLetter = word => {
 const TopSection = () => {
   return (
     <div className="container">
-      <h1 className="text-container">
+      <div className="text-container">
         <span className="text-wrapper">
           <Anime
             loop={false}
@@ -37,11 +37,11 @@ const TopSection = () => {
               return 100 * i;
             }}
           >
-            <span className="text-wrapper__letters">{splitLetter('ALOHA')}</span>
+            <span className="text-wrapper__letters">{splitLetter('ALOHA!')}</span>
           </Anime>
-          <span className="text-wrapper__name">I'M JAY</span>
+          <span className="text-wrapper__name">My name is Jay.</span>
         </span>
-      </h1>
+      </div>
       <LinkForScroll to="about-me" smooth duration={150} offset={-50} className="scroll-down">
         <img src={arrowSVG} className="scroll-down__arrow" />
       </LinkForScroll>

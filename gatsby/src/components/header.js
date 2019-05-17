@@ -1,4 +1,4 @@
-import { Link } from 'gatsby';
+import { Link } from 'react-scroll';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
@@ -23,21 +23,20 @@ class Header extends Component {
     return (
       <div>
         <Navbar color="white" light expand="lg">
-          <NavbarBrand href="/">jay giang</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem className="nav__item">
-                <NavLink href="#about-me">ABOUT ME</NavLink>
+                <Link to="about-me" smooth={true} duration={500} >ABOUT ME</Link>
               </NavItem>
               <NavItem className="nav__item">
-                <NavLink href="https://github.com/reactstrap/reactstrap">EXPERIENCE</NavLink>
+                <Link to="experience" smooth={true} duration={500} >EXPERIENCE</Link>
               </NavItem>
               <NavItem className="nav__item">
-                <NavLink href="https://github.com/reactstrap/reactstrap">PROJECTS</NavLink>
+                <Link to="project" smooth={true} duration={500} >PROJECTS</Link>
               </NavItem>
               <NavItem className="nav__item">
-                <NavLink href="https://github.com/reactstrap/reactstrap">CONTACT</NavLink>
+                <Link to="contact" smooth={true} duration={500} >CONTACT</Link>
               </NavItem>
             </Nav>
           </Collapse>
