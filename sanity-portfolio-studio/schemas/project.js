@@ -31,6 +31,16 @@ export default {
       type: "text"
     },
     {
+      name: "githubUrl",
+      title: "GitHub URL",
+      type: "text"
+    },
+    {
+      name: "liveDemoUrl",
+      title: "Live Demo URL",
+      type: "text"
+    },
+    {
       name: "author",
       title: "Author",
       type: "reference",

@@ -10,6 +10,7 @@ import Experience from '../sections/Experience';
 import Projects from '../sections/Projects';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css'
 
 export const query = graphql`
   {

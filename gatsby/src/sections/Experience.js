@@ -31,31 +31,30 @@ class Experience extends React.Component {
 
     return (
       <div className="experience__container">
-        <h1 className="experience__section-title">Experience</h1>
+        <div className="section-title">EXPERIENCE</div>
         <div className="experience-list__container">
           <div className="experience-list">
             {experienceData.map(({ node: experience }, index) => {
               return (
                 <div  key={index} className="experience__card">
-                  <h5 className="experience__title"  onClick={() => this.selectExperience(index)}>
+                  <div className="experience__title"  onClick={() => this.selectExperience(index)}>
                     { index !== selectedIndex ?
                       <span>{experience.title}</span> :
                       <span style={{color: 'green'}}>{experience.title}</span>
                     }
-                  </h5>
+                  </div>
                 </div>
               );
             })}
           </div>
           <div className="selected-experience">
-            <div className="selected-experience__image">
-              <Image fluid={selectedExperience.node.image.asset.fluid} />
-            </div>
+            <Image fluid={selectedExperience.node.image.asset.fluid} />
             <div className="selected-experience__description">
+              <div className="description-title">{selectedExperience.node.title}</div>
               <ul>
                 {selectedExperience.node.description.map((detail, index)=> {
                   return (
-                    <li key={index} >{detail}</li>
+                    <li key={index} className="description-bullet-points">{detail}</li>
                   )
                 })}
               </ul>
@@ -69,24 +68,3 @@ class Experience extends React.Component {
 
 export default Experience;
 
-
-// const Experience = ({ experienceData }) => {
-//   console.log('experienceData', experienceData);
-//   return (
-//     <div className="experience-container">
-//       <h1 className="experience__main-title">EXPERIENCE</h1>
-//       {experienceData.map(({ node: experience }, i) => {
-//         return (
-//           <div key={i}>
-//             <div className="experience__card">
-//               <h5 className="experience__title">{experience.title}</h5>
-//               <div className="experience__description">{experience.description}</div>
-//               <div className="experience__image">
-//                 <Image fluid={experience.image.asset.fluid} />
-//               </div>
-//             </div>
-//           </div>
-//         );
-//       })}
-//     </div>
-//   );

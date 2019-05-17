@@ -234,7 +234,7 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 5vw !important;
   line-height: 1.1;
 }
 h2 {
@@ -618,5 +618,23 @@ pre tt:after {
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+/*Custom Styles */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 2rem 0 2rem 0;
+  text-align: center;
+}
+
+@media only screen and (min-width: 770px) {
+  .section-title {
+    font-size: 3vw;
+  }
+
+  .gatsby-image-wrapper {
+    flex: 1 1 85rem;
   }
 }

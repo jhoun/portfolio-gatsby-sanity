@@ -13,7 +13,6 @@
 .image__container {
   width: 20rem;
   margin: auto;
-  padding-top: 3rem;
 }
 
 .description__container {
@@ -83,7 +82,7 @@
   .aboutme__wrapper {
     display: flex;
     justify-content: center;
-    padding: 2rem;
+    padding: 0 2rem 4rem;
   }
 
   .image__container {

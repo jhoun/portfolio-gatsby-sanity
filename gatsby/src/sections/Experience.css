@@ -3,12 +3,6 @@
   width: 100%;
 }
 
-.experience__section-title {
-  color: #143642;
-  padding: 2rem 0 3rem 0;
-  text-align: center;
-}
-
 .experience-list {
   display: flex;
   justify-content: center;
@@ -23,7 +17,6 @@
   text-align: center;
   padding-bottom: 1rem;
   font-size: 13px;
-  font-weight: bold;
   cursor: pointer;
 }
 
@@ -45,12 +38,12 @@
   }
 
   .experience-list {
-    padding-bottom: 5rem;
+    padding-bottom: 4rem;
   }
 
   .selected-experience {
     display: flex;
-    padding: 0 10rem;
+    padding: 0 10rem 4rem;
   }
 
   .experience__title {
@@ -59,12 +52,19 @@
     font-size: 1rem;
   }
 
-  .selected-experience__image {
-    flex: 1 1 50%;
+  .description-title {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 1.5rem;
   }
 
   .selected-experience__description {
-    flex: 1 1 50%;
+    flex: 1 1 50rem;
+    padding: 0 0 2rem 0;
+  }
+
+  .description-bullet-points {
+     padding-bottom: 1rem;
   }
 
 }

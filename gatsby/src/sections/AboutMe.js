@@ -8,7 +8,7 @@ const AboutMe = ({ aboutData }) => {
   const { node: about } = aboutData[0];
   return (
     <div id="about-me" className="aboutme-container">
-      <h1 className="about-me__title">{about.name.toUpperCase()}</h1>
+      <div className="section-title">{about.name.toUpperCase()}</div>
       <div className="aboutme__subcontainer">
         <div className="aboutme__wrapper">
           <div className="image__container">

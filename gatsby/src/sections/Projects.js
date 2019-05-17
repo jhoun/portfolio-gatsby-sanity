@@ -6,19 +6,15 @@ import './Projects.css';
 const Projects = ({ projectData }) => {
   return (
     <div className="project-container">
-      <h1 className="project__main-title">PROJECTS</h1>
+      <div className="section-title">PROJECTS</div>
       {projectData.map(({ node: project }, index) => {
         return (
           <div key={index} className="project__card">
             <div className="project__card__wrapper">
-              <div className="project__card__wrapper2">
-                <h5 className="project__title">{project.title}</h5>
+                <div className="project__title">{project.title}</div>
                 <div className="project__description">{project.description}</div>
-              </div>
             </div>
-            <div className="project__image">
               <Image fluid={project.image.asset.fluid} />
-            </div>
           </div>
         );
       })}
